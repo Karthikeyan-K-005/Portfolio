@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="animated-header">
+    <div class="container">
+      <h1>Hi, I'm <span class="highlight">Karthikeyan</span></h1>
+      <p>Full Stack Developer | Problem Solver | Tech Enthusiast</p>
+      <a href="resume.pdf" class="resume-btn" download>Download Resume</a>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#workshops">Workshops</a></li>
+      <li><a href="#internships">Internships</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about" class="container fade-up">
+    <h2>About Me</h2>
+    <p>I am a passionate and self-motivated full stack developer with a strong background in MERN stack, C, Java, and problem-solving. I love building web applications and improving user experience.</p>
+  </section>
+
+  <section id="skills" class="container fade-up">
+    <h2>Skills</h2>
+    <ul class="skills-list icons">
+      <li><i class="fab fa-html5"></i><span>HTML5</span></li>
+      <li><i class="fab fa-css3-alt"></i><span>CSS3</span></li>
+      <li><i class="fab fa-js"></i><span>JavaScript</span></li>
+      <li><i class="fab fa-react"></i><span>React</span></li>
+      <li><i class="fab fa-node-js"></i><span>Node.js</span></li>
+      <li><i class="fas fa-database"></i><span>MongoDB</span></li>
+      <li><i class="fas fa-server"></i><span>Express</span></li>
+      <li><i class="fas fa-code"></i><span>C / C++</span></li>
+      <li><i class="fab fa-java"></i><span>Java</span></li>
+      <li><i class="fab fa-git-alt"></i><span>Git</span></li>
+      <li><i class="fab fa-github"></i><span>GitHub</span></li>
+    </ul>
+  </section>
+
+  <section id="projects" class="container fade-down">
+    <h2>Projects</h2>
+    <div class="scroll-container">
+      <div class="card"><img src="images/project1.jpg" alt="Blog" onclick="openLightbox(this.src)"><div class="overlay">Blog Website (MERN)</div></div>
+      <div class="card"><img src="images/project2.jpg" alt="Parking" onclick="openLightbox(this.src)"><div class="overlay">Parking Management System</div></div>
+      <div class="card"><img src="images/project3.jpg" alt="Fake News" onclick="openLightbox(this.src)"><div class="overlay">Fake News Detection</div></div>
+      <div class="card"><img src="images/project4.jpg" alt="Sentiment" onclick="openLightbox(this.src)"><div class="overlay">Sentiment Analysis</div></div>
+    </div>
+  </section>
+
+  <section id="achievements" class="container fade-up">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Secure second place in CTF contest conducted at NEC.</li>
+      <li>Successfully completed Google Developer Groups on Campus study jam.</li>
+      <li>Secure first place in Geeks for Geeks coding contest on Campus.</li>
+      <li>Cracked level 2 in National level Srinivasa Ramanujam Mathematical Competitions.</li>
+    </ul>
+  </section>
+
+  <section id="courses" class="container fade-down">
+    <h2>Courses</h2>
+    <div class="scroll-container">
+      <div class="card"><img src="images/course1.jpg" onclick="openLightbox(this.src)"><div class="overlay">Joy of Computing (Python)</div></div>
+      <div class="card"><img src="images/course2.jpg" onclick="openLightbox(this.src)"><div class="overlay">Programming in C</div></div>
+      <div class="card"><img src="images/course3.jpg" onclick="openLightbox(this.src)"><div class="overlay">Programming in Java</div></div>
+      <div class="card"><img src="images/course4.jpg" onclick="openLightbox(this.src)"><div class="overlay">UML Development</div></div>
+      <div class="card"><img src="images/course5.jpg" onclick="openLightbox(this.src)"><div class="overlay">Cyber Security</div></div>
+      <div class="card"><img src="images/course6.jpg" onclick="openLightbox(this.src)"><div class="overlay">AWS Essentials</div></div>
+      <div class="card"><img src="images/course7.jpg" onclick="openLightbox(this.src)"><div class="overlay">Html & CSS</div></div>
+      <div class="card"><img src="images/course8.jpg" onclick="openLightbox(this.src)"><div class="overlay">JavaScript Essentials</div></div>
+      <div class="card"><img src="images/course9.jpg" onclick="openLightbox(this.src)"><div class="overlay">Front end with React</div></div>
+      <div class="card"><img src="images/course10.jpg" onclick="openLightbox(this.src)"><div class="overlay">Data Networking Essentials</div></div>
+      <div class="card"><img src="images/course11.jpg" onclick="openLightbox(this.src)"><div class="overlay">Networking Fundamentals</div></div>
+      <div class="card"><img src="images/course12.jpg" onclick="openLightbox(this.src)"><div class="overlay">Foundations of UX</div></div>
+      <div class="card"><img src="images/course13.jpg" onclick="openLightbox(this.src)"><div class="overlay">Wireframes</div></div>
+    </div>
+  </section>
+
+  <section id="workshops" class="container fade-up">
+    <h2>Workshops</h2>
+    <div class="scroll-container">
+      <div class="card"><img src="images/workshop1.jpg" onclick="openLightbox(this.src)"><div class="overlay">DSA Workshop</div></div>
+      <div class="card"><img src="images/workshop2.jpg" onclick="openLightbox(this.src)"><div class="overlay">Cyber Security Workshop (lvl 1)</div></div>
+      <div class="card"><img src="images/workshop3.jpg" onclick="openLightbox(this.src)"><div class="overlay">Cyber Security Workshop (lvl 2)</div></div>
+    </div>
+  </section>
+
+  <section id="internships" class="container fade-down">
+    <h2>Internships</h2>
+    <ul>
+      <li>Cybersecurity & Ethical Hacking - Technohacks Edutech</li>
+      <li>Full Stack Development - Gabriel</li>
+    </ul>
+  </section>
+
+  <section id="education" class="container fade-up">
+    <h2>Education</h2>
+    <p><strong>Bachelor of Computer Science and Engineering</strong><br />
+    Ramco Institute Of Technology<br />
+    CGPA: 8.3/10</p>
+  </section>
+
+  <section id="contact" class="container fade-down">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:karthikeyankandhasamy2005@gmail.com">karthikeyankandhasamy2005@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/karthikeyan-k-6a4322255/" target="_blank">linkedin.com/in/karthikeyan-k</a></p>
+    <p>GitHub: <a href="https://github.com/Karthikeyan-K-005" target="_blank">github.com/karthikeyan-k</a></p>
+  </section>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+
+  <footer>
+    <p>&copy; 2025 Karthikeyan. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById("lightbox-img").src = src;
+      document.getElementById("lightbox").style.display = "flex";
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
+
+
+</body>
+</html>
